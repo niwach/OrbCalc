@@ -1,2 +1,0 @@
-# OrbCalc
-Created with CodeSandbox

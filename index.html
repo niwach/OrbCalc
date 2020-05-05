@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width">
+
+ <script src="https://cdn.jsdelivr.net/gh/lizard-isana/orb.js@2.3/build/orb.v2.js"></script>
+ <script src="src/index.js">
+
+ <title>Orb Calc Skelton</title>
+</head>
+
+<body>
+<ul id="writtens">
+</ul>
+
+<!--
+<p>
+<input type="text" id="inputForm1" name="inputForm1" placeholder="追加する文字列">
+<button type="button" onclick="onAddListItemButtonClick()">追加</button>
+</p>
+-->
+
+<p>観測衛星を設定</p>
+
+<form name="tleText">
+<textarea type="text" id="inputFormTLE" name="inputFormTLE" placeholder="TLE" style="width:100%"></textarea>
+</form>
+
+
+<p>観測地点を設定</p>
+<p>
+<input type="text" id="inputFormLat" name="inputFormLat" placeholder="緯度:90.0000">
+<input type="text" id="inputFormLon" name="inputFormLon" placeholder="経度:180.0000">
+<input type="text" id="inputFormHgt" name="inputFormHgt" placeholder="高度:m">
+</p>
+
+<p>期間を設定</p>
+<p>
+<input type="text" id="inputFormStart" name="inputFormStart" placeholder="開始:yyyymmddhhmmss">
+<input type="text" id="inputFormStop" name="inputFormStop" placeholder="終了:yyyymmddhhmmss">
+</p>
+
+<p>
+<button type="button" onclick="calcBtn()">計算開始</button>
+</p>
+
+<p>計算結果</p>
+<p>入力内容、10秒ごとの時刻、衛星緯度、衛星経度、観測点からの方位、仰角、距離、距離変化率</p>
+
+<form name="resultText">
+<textarea type="text" id="orbcalcresult" name="orbcalcresult"　placeholder="結果" style="width:100%"></textarea>
+</form>
+
+
+<p>TLE:<span id="span1"></span></p>
+<p>lat:<span id="span2"></span>lon:<span id="span3"></span>hight:<span id="span4"></span></p>
+<p>sart time:<span id="span5"></span>end time:<span id="span6"></span></p>
+
+
+
+</body>
+</html>
